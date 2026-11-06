@@ -1,0 +1,1171 @@
+{
+ "version": "2026-11",
+ "levels": {
+  "regulatory-ban": {
+   "label": "Regulatory ban",
+   "rank": 5,
+   "note": "No longer authorised in EU food (or authorisation withdrawn/phasing out)."
+  },
+  "iarc": {
+   "label": "IARC classification",
+   "rank": 4,
+   "note": "Classified by the WHO International Agency for Research on Cancer. IARC rates hazard (can it cause cancer at all), not the risk at normal intake."
+  },
+  "warning-label": {
+   "label": "Mandatory warning label",
+   "rank": 4,
+   "note": "EU law requires a warning statement on the label."
+  },
+  "regulatory-restriction": {
+   "label": "Regulatory restriction",
+   "rank": 3,
+   "note": "Allowed in the EU only in specific foods or below strict limits."
+  },
+  "under-review": {
+   "label": "Under review",
+   "rank": 2,
+   "note": "Regulators have flagged data gaps or intake concerns and are re-assessing."
+  },
+  "limited-evidence": {
+   "label": "Limited evidence",
+   "rank": 1,
+   "note": "Some studies (often animal or observational) raise questions; not established in humans. Authorised in the EU."
+  }
+ },
+ "entries": [
+  {
+   "id": "nitrites",
+   "name": "Nitrites",
+   "e": [
+    "e249",
+    "e250"
+   ],
+   "keywords": [
+    "nitriet",
+    "nitrite",
+    "nitrietpekelzout"
+   ],
+   "category": "Preservative (cured meat)",
+   "level": "iarc",
+   "summary": "Used to cure meat (colour, preventing botulism). In the body and during cooking nitrites can form N-nitroso compounds (nitrosamines). IARC classifies ingested nitrite under conditions leading to nitrosation as 'probably carcinogenic' (Group 2A), and processed meat itself as Group 1. EFSA (2017) found intake within safe limits for most people but in 2023 concluded nitrosamine exposure in food is a health concern; the EU lowered maximum levels in 2023.",
+   "sources": [
+    {
+     "label": "EFSA: Nitrosamines in food raise a health concern (2023)",
+     "url": "https://www.efsa.europa.eu/en/news/nitrosamines-food-raise-health-concern"
+    },
+    {
+     "label": "EFSA opinion on nitrites E249–E250 (2017)",
+     "url": "https://doi.org/10.2903/j.efsa.2017.4786"
+    },
+    {
+     "label": "WHO Q&A: processed meat and cancer",
+     "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat"
+    },
+    {
+     "label": "Regulation (EU) 2023/2108 (lower limits)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2023/2108/oj"
+    }
+   ],
+   "pubmed": "(sodium nitrite OR nitrite) AND (processed meat OR nitrosamine) AND cancer"
+  },
+  {
+   "id": "nitrates",
+   "name": "Nitrates",
+   "e": [
+    "e251",
+    "e252"
+   ],
+   "keywords": [
+    "nitraat",
+    "salpeter"
+   ],
+   "category": "Preservative (cured meat, cheese)",
+   "level": "iarc",
+   "summary": "Nitrates are converted to nitrites in food and in the body. As with nitrites, IARC classifies ingested nitrate under conditions that cause nitrosation as Group 2A. EFSA (2017) considered additive use within safe limits but total intake (mainly from vegetables) can approach the ADI. EU maximum levels were lowered in 2023.",
+   "sources": [
+    {
+     "label": "EFSA opinion on nitrates E251–E252 (2017)",
+     "url": "https://doi.org/10.2903/j.efsa.2017.4787"
+    },
+    {
+     "label": "IARC Monographs list of classifications",
+     "url": "https://monographs.iarc.who.int/list-of-classifications/"
+    },
+    {
+     "label": "Regulation (EU) 2023/2108 (lower limits)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2023/2108/oj"
+    }
+   ],
+   "pubmed": "(sodium nitrate OR potassium nitrate) AND food additive AND health"
+  },
+  {
+   "id": "e171",
+   "name": "Titanium dioxide",
+   "e": [
+    "e171"
+   ],
+   "keywords": [
+    "titaniumdioxide",
+    "titanium dioxide",
+    "titaandioxide"
+   ],
+   "category": "Colour (white)",
+   "level": "regulatory-ban",
+   "summary": "In 2021 EFSA concluded E171 could no longer be considered safe as a food additive because a concern for genotoxicity (damage to DNA) could not be ruled out. It has been banned in EU food since August 2022. If you see it on a product sold in the EU, the data may be outdated or the product imported.",
+   "sources": [
+    {
+     "label": "EFSA: Titanium dioxide no longer considered safe (2021)",
+     "url": "https://www.efsa.europa.eu/en/news/titanium-dioxide-e171-no-longer-considered-safe-when-used-food-additive"
+    },
+    {
+     "label": "EFSA opinion (2021)",
+     "url": "https://doi.org/10.2903/j.efsa.2021.6585"
+    },
+    {
+     "label": "Regulation (EU) 2022/63 (ban)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2022/63/oj"
+    }
+   ],
+   "pubmed": "titanium dioxide E171 food genotoxicity"
+  },
+  {
+   "id": "e102",
+   "name": "Tartrazine",
+   "e": [
+    "e102"
+   ],
+   "keywords": [
+    "tartrazine"
+   ],
+   "category": "Colour (yellow azo dye)",
+   "level": "warning-label",
+   "summary": "One of six colours studied in the 2007 Southampton trial, which linked mixtures of these colours to increased hyperactivity in some children. Foods containing it must carry the EU label 'may have an adverse effect on activity and attention in children'. Can also cause intolerance reactions in sensitive people.",
+   "sources": [
+    {
+     "label": "McCann et al., Lancet 2007 (Southampton study)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/17825405/"
+    },
+    {
+     "label": "EFSA re-evaluation of tartrazine (2009)",
+     "url": "https://doi.org/10.2903/j.efsa.2009.1331"
+    },
+    {
+     "label": "Regulation (EC) 1333/2008, Annex V (warning)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj"
+    },
+    {
+     "label": "EFSA: food colours",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/food-colours"
+    }
+   ],
+   "pubmed": "tartrazine hyperactivity OR tartrazine toxicity"
+  },
+  {
+   "id": "e104",
+   "name": "Quinoline yellow",
+   "e": [
+    "e104"
+   ],
+   "keywords": [
+    "chinolinegeel",
+    "quinoline yellow"
+   ],
+   "category": "Colour (yellow)",
+   "level": "warning-label",
+   "summary": "One of the six 'Southampton colours'. Foods containing it must carry the EU warning 'may have an adverse effect on activity and attention in children'. EFSA lowered its acceptable daily intake in 2009.",
+   "sources": [
+    {
+     "label": "McCann et al., Lancet 2007 (Southampton study)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/17825405/"
+    },
+    {
+     "label": "Regulation (EC) 1333/2008, Annex V (warning)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj"
+    }
+   ],
+   "pubmed": "quinoline yellow food colour"
+  },
+  {
+   "id": "e110",
+   "name": "Sunset yellow FCF",
+   "e": [
+    "e110"
+   ],
+   "keywords": [
+    "zonnegeel",
+    "sunset yellow"
+   ],
+   "category": "Colour (orange azo dye)",
+   "level": "warning-label",
+   "summary": "One of the six 'Southampton colours'. Foods containing it must carry the EU warning 'may have an adverse effect on activity and attention in children'.",
+   "sources": [
+    {
+     "label": "McCann et al., Lancet 2007 (Southampton study)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/17825405/"
+    },
+    {
+     "label": "Regulation (EC) 1333/2008, Annex V (warning)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj"
+    }
+   ],
+   "pubmed": "sunset yellow azo dye"
+  },
+  {
+   "id": "e122",
+   "name": "Azorubine (carmoisine)",
+   "e": [
+    "e122"
+   ],
+   "keywords": [
+    "azorubine",
+    "carmoisine"
+   ],
+   "category": "Colour (red azo dye)",
+   "level": "warning-label",
+   "summary": "One of the six 'Southampton colours'. Foods containing it must carry the EU warning 'may have an adverse effect on activity and attention in children'.",
+   "sources": [
+    {
+     "label": "McCann et al., Lancet 2007 (Southampton study)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/17825405/"
+    },
+    {
+     "label": "Regulation (EC) 1333/2008, Annex V (warning)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj"
+    }
+   ],
+   "pubmed": "azorubine OR carmoisine"
+  },
+  {
+   "id": "e124",
+   "name": "Ponceau 4R",
+   "e": [
+    "e124"
+   ],
+   "keywords": [
+    "ponceau",
+    "cochenillerood a"
+   ],
+   "category": "Colour (red azo dye)",
+   "level": "warning-label",
+   "summary": "One of the six 'Southampton colours'. Foods containing it must carry the EU warning 'may have an adverse effect on activity and attention in children'. Not permitted in food in the USA.",
+   "sources": [
+    {
+     "label": "McCann et al., Lancet 2007 (Southampton study)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/17825405/"
+    },
+    {
+     "label": "Regulation (EC) 1333/2008, Annex V (warning)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj"
+    }
+   ],
+   "pubmed": "ponceau 4R"
+  },
+  {
+   "id": "e129",
+   "name": "Allura red AC",
+   "e": [
+    "e129"
+   ],
+   "keywords": [
+    "allurarood",
+    "allura red"
+   ],
+   "category": "Colour (red azo dye)",
+   "level": "warning-label",
+   "summary": "One of the six 'Southampton colours'. Foods containing it must carry the EU warning 'may have an adverse effect on activity and attention in children'. Some recent animal studies explore effects on gut inflammation.",
+   "sources": [
+    {
+     "label": "McCann et al., Lancet 2007 (Southampton study)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/17825405/"
+    },
+    {
+     "label": "Regulation (EC) 1333/2008, Annex V (warning)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj"
+    }
+   ],
+   "pubmed": "allura red"
+  },
+  {
+   "id": "e123",
+   "name": "Amaranth",
+   "e": [
+    "e123"
+   ],
+   "keywords": [],
+   "category": "Colour (red azo dye)",
+   "level": "regulatory-restriction",
+   "summary": "Restricted in the EU to a few uses (e.g. aperitif wines and fish roe) and not permitted in food in the USA, following older toxicity questions. Rare in everyday foods.",
+   "sources": [
+    {
+     "label": "EFSA re-evaluation of amaranth (2010)",
+     "url": "https://doi.org/10.2903/j.efsa.2010.1649"
+    },
+    {
+     "label": "Regulation (EC) 1333/2008",
+     "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj"
+    }
+   ],
+   "pubmed": "amaranth E123 dye toxicity"
+  },
+  {
+   "id": "e127",
+   "name": "Erythrosine",
+   "e": [
+    "e127"
+   ],
+   "keywords": [
+    "erytrosine",
+    "erythrosine"
+   ],
+   "category": "Colour (red)",
+   "level": "regulatory-restriction",
+   "summary": "Restricted in the EU to cocktail and candied cherries. Thyroid effects were seen in rats at high doses; in January 2025 the US FDA revoked its authorisation in food (effective 2027).",
+   "sources": [
+    {
+     "label": "EFSA re-evaluation of erythrosine (2011)",
+     "url": "https://doi.org/10.2903/j.efsa.2011.1854"
+    },
+    {
+     "label": "Regulation (EC) 1333/2008",
+     "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj"
+    }
+   ],
+   "pubmed": "erythrosine thyroid"
+  },
+  {
+   "id": "caramel-ammonia",
+   "name": "Ammonia caramels",
+   "e": [
+    "e150c",
+    "e150d"
+   ],
+   "keywords": [
+    "ammoniakkaramel",
+    "ammoniak-karamel",
+    "ammonia caramel",
+    "sulfiet-ammoniak",
+    "sulfietammoniak",
+    "sulphite ammonia",
+    "sulfite ammonia"
+   ],
+   "category": "Colour (brown, e.g. cola)",
+   "level": "iarc",
+   "summary": "These caramel colours can contain 4-methylimidazole (4-MEI), a by-product that IARC classifies as 'possibly carcinogenic' (Group 2B) based on animal studies. EFSA (2011) found typical exposure safe and the EU sets a limit on 4-MEI content.",
+   "sources": [
+    {
+     "label": "EFSA opinion on caramel colours (2011)",
+     "url": "https://doi.org/10.2903/j.efsa.2011.2004"
+    },
+    {
+     "label": "IARC Monographs list of classifications",
+     "url": "https://monographs.iarc.who.int/list-of-classifications/"
+    }
+   ],
+   "pubmed": "4-methylimidazole caramel colour"
+  },
+  {
+   "id": "benzoates",
+   "name": "Benzoic acid & benzoates",
+   "e": [
+    "e210",
+    "e211",
+    "e212",
+    "e213"
+   ],
+   "keywords": [
+    "natriumbenzoaat",
+    "sodium benzoate",
+    "benzoëzuur",
+    "kaliumbenzoaat"
+   ],
+   "category": "Preservative",
+   "level": "limited-evidence",
+   "summary": "Common in soft drinks and sauces. Together with vitamin C (ascorbic acid) small amounts of benzene can form under heat or light. Sodium benzoate was part of the Southampton hyperactivity study mixes. EFSA (2016) found intake within safe limits, though high consumers among children can come close to the ADI.",
+   "sources": [
+    {
+     "label": "EFSA re-evaluation of benzoates (2016)",
+     "url": "https://doi.org/10.2903/j.efsa.2016.4433"
+    }
+   ],
+   "pubmed": "sodium benzoate health effects"
+  },
+  {
+   "id": "sulphites",
+   "name": "Sulphites",
+   "e": [
+    "e220",
+    "e221",
+    "e222",
+    "e223",
+    "e224",
+    "e225",
+    "e226",
+    "e227",
+    "e228"
+   ],
+   "keywords": [
+    "disulfiet",
+    "sulfiet",
+    "sulfite",
+    "sulphite",
+    "sulphur dioxide",
+    "zwaveldioxide"
+   ],
+   "category": "Preservative / antioxidant",
+   "level": "regulatory-restriction",
+   "summary": "Must be declared as an allergen above 10 mg/kg because they can trigger asthma-like reactions in sensitive people. EFSA (2022) noted that for high consumers a safety concern could not be excluded and that more data are needed.",
+   "sources": [
+    {
+     "label": "EFSA follow-up on sulphites (2022)",
+     "url": "https://doi.org/10.2903/j.efsa.2022.7594"
+    },
+    {
+     "label": "Regulation (EU) 1169/2011, Annex II (allergens)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj"
+    }
+   ],
+   "pubmed": "sulfite sensitivity asthma food",
+   "exclude": [
+    "sulfiet[\\s-]*ammoniak",
+    "sulph?f?ite[\\s-]*ammonia",
+    "sulfite[\\s-]*ammonia"
+   ]
+  },
+  {
+   "id": "e320",
+   "name": "BHA (butylated hydroxyanisole)",
+   "e": [
+    "e320"
+   ],
+   "keywords": [
+    "butylhydroxyanisol",
+    "butylated hydroxyanisole"
+   ],
+   "category": "Antioxidant",
+   "level": "iarc",
+   "summary": "IARC classifies BHA as 'possibly carcinogenic to humans' (Group 2B), based on tumours in rodents fed high doses. It is also being assessed as a possible endocrine disruptor. Still authorised in the EU within limits (EFSA 2011).",
+   "sources": [
+    {
+     "label": "EFSA re-evaluation of BHA (2011)",
+     "url": "https://doi.org/10.2903/j.efsa.2011.2392"
+    },
+    {
+     "label": "IARC Monographs list of classifications",
+     "url": "https://monographs.iarc.who.int/list-of-classifications/"
+    }
+   ],
+   "pubmed": "butylated hydroxyanisole"
+  },
+  {
+   "id": "e321",
+   "name": "BHT (butylated hydroxytoluene)",
+   "e": [
+    "e321"
+   ],
+   "keywords": [
+    "butylhydroxytolueen",
+    "butylated hydroxytoluene"
+   ],
+   "category": "Antioxidant",
+   "level": "limited-evidence",
+   "summary": "A synthetic antioxidant related to BHA. Animal studies give mixed results; EFSA (2012) set a lower ADI but considered current use safe. IARC: Group 3 (not classifiable).",
+   "sources": [
+    {
+     "label": "EFSA re-evaluation of BHT (2012)",
+     "url": "https://doi.org/10.2903/j.efsa.2012.2588"
+    }
+   ],
+   "pubmed": "butylated hydroxytoluene toxicity"
+  },
+  {
+   "id": "e319",
+   "name": "TBHQ",
+   "e": [
+    "e319"
+   ],
+   "keywords": [
+    "tertiair-butylhydrochinon",
+    "tbhq"
+   ],
+   "category": "Antioxidant",
+   "level": "limited-evidence",
+   "summary": "Synthetic antioxidant used in fats and fried snacks. Authorised in the EU; some animal and lab studies have raised questions about immune effects that are being studied further.",
+   "sources": [
+    {
+     "label": "EFSA: food additives",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/food-additives"
+    }
+   ],
+   "pubmed": "tert-butylhydroquinone"
+  },
+  {
+   "id": "gallates",
+   "name": "Gallates",
+   "e": [
+    "e310",
+    "e311",
+    "e312"
+   ],
+   "keywords": [
+    "propylgallaat",
+    "octylgallaat",
+    "dodecylgallaat"
+   ],
+   "category": "Antioxidant",
+   "level": "limited-evidence",
+   "summary": "Antioxidants in fats and oils. Can cause skin sensitisation; EFSA's 2014 re-evaluation of propyl gallate kept it authorised but noted data gaps for the other gallates.",
+   "sources": [
+    {
+     "label": "EFSA: food additives",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/food-additives"
+    }
+   ],
+   "pubmed": "propyl gallate"
+  },
+  {
+   "id": "aspartame",
+   "name": "Aspartame",
+   "e": [
+    "e951",
+    "e962"
+   ],
+   "keywords": [
+    "aspartaam",
+    "aspartame"
+   ],
+   "category": "Sweetener",
+   "level": "iarc",
+   "summary": "In 2023 IARC classified aspartame as 'possibly carcinogenic to humans' (Group 2B, limited evidence), while JECFA kept the acceptable daily intake of 40 mg/kg body weight. Products must state 'contains a source of phenylalanine' because it is unsafe for people with phenylketonuria (PKU).",
+   "sources": [
+    {
+     "label": "WHO/IARC: aspartame hazard and risk results (2023)",
+     "url": "https://www.who.int/news/item/14-07-2023-aspartame-hazard-and-risk-assessment-results-released"
+    },
+    {
+     "label": "EFSA: aspartame",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/aspartame"
+    },
+    {
+     "label": "Debras et al., PLoS Med 2022 (NutriNet-Santé)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35324894/"
+    }
+   ],
+   "pubmed": "aspartame cancer OR aspartame health"
+  },
+  {
+   "id": "e950",
+   "name": "Acesulfame K",
+   "e": [
+    "e950"
+   ],
+   "keywords": [
+    "acesulfaam",
+    "acesulfame"
+   ],
+   "category": "Sweetener",
+   "level": "limited-evidence",
+   "summary": "Authorised sweetener, often combined with aspartame or sucralose. Large observational studies (e.g. NutriNet-Santé) found associations between artificial sweetener intake and cancer or cardiovascular disease; such studies cannot prove cause. EFSA re-evaluated it and considers it safe at authorised levels.",
+   "sources": [
+    {
+     "label": "EFSA: sweeteners",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+    },
+    {
+     "label": "Debras et al., PLoS Med 2022 (NutriNet-Santé)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35324894/"
+    }
+   ],
+   "pubmed": "acesulfame potassium health"
+  },
+  {
+   "id": "e955",
+   "name": "Sucralose",
+   "e": [
+    "e955"
+   ],
+   "keywords": [
+    "sucralose"
+   ],
+   "category": "Sweetener",
+   "level": "limited-evidence",
+   "summary": "Authorised sweetener. Lab studies have raised questions about a breakdown product (sucralose-6-acetate) and about forming chlorinated compounds when heated to high temperatures, and about effects on gut bacteria. Human evidence is limited.",
+   "sources": [
+    {
+     "label": "EFSA: sweeteners",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+    },
+    {
+     "label": "WHO guideline on non-sugar sweeteners (2023)",
+     "url": "https://www.who.int/publications/i/item/9789240073616"
+    }
+   ],
+   "pubmed": "sucralose health effects"
+  },
+  {
+   "id": "e952",
+   "name": "Cyclamate",
+   "e": [
+    "e952"
+   ],
+   "keywords": [
+    "cyclamaat",
+    "cyclamate"
+   ],
+   "category": "Sweetener",
+   "level": "regulatory-restriction",
+   "summary": "Authorised in the EU (with a lowered ADI since 2000) but banned in the USA since 1969 after animal studies; later studies did not confirm a cancer link. Some people's gut bacteria convert it to cyclohexylamine, the basis for the ADI.",
+   "sources": [
+    {
+     "label": "EFSA: sweeteners",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+    },
+    {
+     "label": "Regulation (EC) 1333/2008",
+     "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj"
+    }
+   ],
+   "pubmed": "cyclamate"
+  },
+  {
+   "id": "e968",
+   "name": "Erythritol",
+   "e": [
+    "e968"
+   ],
+   "keywords": [
+    "erythritol"
+   ],
+   "category": "Sweetener (polyol)",
+   "level": "limited-evidence",
+   "summary": "A 2023 study (Nature Medicine) linked higher blood erythritol levels with cardiovascular events and increased platelet clotting; this is an association and needs confirmation. EFSA (2023) re-evaluated erythritol and set an ADI, noting laxative effects at high intake.",
+   "sources": [
+    {
+     "label": "Witkowski et al., Nat Med 2023",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36849732/"
+    },
+    {
+     "label": "EFSA re-evaluation of erythritol (2023)",
+     "url": "https://doi.org/10.2903/j.efsa.2023.8430"
+    }
+   ],
+   "pubmed": "erythritol cardiovascular"
+  },
+  {
+   "id": "polyols",
+   "name": "Polyols (sugar alcohols)",
+   "e": [
+    "e420",
+    "e421",
+    "e953",
+    "e965",
+    "e966",
+    "e967"
+   ],
+   "keywords": [
+    "sorbitol",
+    "maltitol",
+    "xylitol",
+    "isomalt",
+    "lactitol",
+    "mannitol"
+   ],
+   "category": "Sweetener",
+   "level": "warning-label",
+   "summary": "Sugar alcohols such as sorbitol, maltitol and xylitol. If a food contains more than 10% added polyols the label must say 'excessive consumption may produce laxative effects'. Generally considered safe in normal amounts.",
+   "sources": [
+    {
+     "label": "Regulation (EU) 1169/2011, Annex III",
+     "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj"
+    }
+   ],
+   "pubmed": "polyols laxative OR sugar alcohols gut"
+  },
+  {
+   "id": "carrageenan",
+   "name": "Carrageenan",
+   "e": [
+    "e407",
+    "e407a"
+   ],
+   "keywords": [
+    "carrageen",
+    "carrageenan"
+   ],
+   "category": "Thickener (seaweed)",
+   "level": "under-review",
+   "summary": "Thickener from red seaweed, common in dairy desserts and plant milks. Degraded carrageenan (not permitted in food) is IARC Group 2B. Some animal and cell studies suggest gut inflammation. EFSA (2018) kept it authorised with a temporary ADI and asked for more data; its use in infant formula is not permitted.",
+   "sources": [
+    {
+     "label": "EFSA re-evaluation of carrageenan (2018)",
+     "url": "https://doi.org/10.2903/j.efsa.2018.5238"
+    },
+    {
+     "label": "EFSA: food additives",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/food-additives"
+    }
+   ],
+   "pubmed": "carrageenan intestinal inflammation"
+  },
+  {
+   "id": "polysorbates",
+   "name": "Polysorbates",
+   "e": [
+    "e432",
+    "e433",
+    "e434",
+    "e435",
+    "e436"
+   ],
+   "keywords": [
+    "polysorbaat",
+    "polysorbate"
+   ],
+   "category": "Emulsifier",
+   "level": "limited-evidence",
+   "summary": "Synthetic emulsifiers. Mouse studies found polysorbate 80 altered gut microbiota and promoted low-grade inflammation; large observational studies link emulsifier intake to cardiovascular disease and cancer. Human trial evidence is still limited.",
+   "sources": [
+    {
+     "label": "Chassaing et al., Nature 2015",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/25731162/"
+    },
+    {
+     "label": "Sellem et al., BMJ 2023 (emulsifiers & CVD)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37673430/"
+    },
+    {
+     "label": "EFSA re-evaluation of polysorbates (2015)",
+     "url": "https://doi.org/10.2903/j.efsa.2015.4152"
+    }
+   ],
+   "pubmed": "polysorbate 80 gut microbiota"
+  },
+  {
+   "id": "e466",
+   "name": "Carboxymethylcellulose",
+   "e": [
+    "e466",
+    "e469"
+   ],
+   "keywords": [
+    "carboxymethylcellulose",
+    "cellulosegom"
+   ],
+   "category": "Thickener / emulsifier",
+   "level": "limited-evidence",
+   "summary": "Cellulose-based thickener. Mouse studies and a small human feeding trial (2022) found changes in gut bacteria and metabolites. Observational studies link it with cardiovascular risk. Authorised in the EU.",
+   "sources": [
+    {
+     "label": "Chassaing et al., Nature 2015",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/25731162/"
+    },
+    {
+     "label": "Sellem et al., BMJ 2023 (emulsifiers & CVD)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37673430/"
+    }
+   ],
+   "pubmed": "carboxymethylcellulose gut microbiota"
+  },
+  {
+   "id": "e471",
+   "name": "Mono- and diglycerides of fatty acids",
+   "e": [
+    "e471",
+    "e472e"
+   ],
+   "keywords": [
+    "mono- en diglyceriden",
+    "mono- and diglycerides"
+   ],
+   "category": "Emulsifier",
+   "level": "limited-evidence",
+   "summary": "Very common emulsifiers in bread, spreads and ice cream. A large French cohort (BMJ 2023) associated higher intake with cardiovascular disease and cancer; this does not prove cause. EFSA (2017) saw no safety concern.",
+   "sources": [
+    {
+     "label": "Sellem et al., BMJ 2023 (emulsifiers & CVD)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/37673430/"
+    },
+    {
+     "label": "EFSA re-evaluation of E471 (2017)",
+     "url": "https://doi.org/10.2903/j.efsa.2017.5045"
+    }
+   ],
+   "pubmed": "mono- and diglycerides of fatty acids emulsifier health"
+  },
+  {
+   "id": "phosphates",
+   "name": "Phosphates & phosphoric acid",
+   "e": [
+    "e338",
+    "e339",
+    "e340",
+    "e341",
+    "e343",
+    "e450",
+    "e451",
+    "e452"
+   ],
+   "keywords": [
+    "fosforzuur",
+    "phosphoric acid",
+    "difosfaat",
+    "trifosfaat",
+    "polyfosfaat",
+    "diphosphate",
+    "triphosphate",
+    "polyphosphate"
+   ],
+   "category": "Acidity regulator / stabiliser",
+   "level": "under-review",
+   "summary": "Used in colas, processed meat, cheese and baked goods. EFSA (2019) set a group ADI for phosphates and noted intake may exceed it for some children and high consumers. Excess phosphorus is a particular concern for people with kidney disease.",
+   "sources": [
+    {
+     "label": "EFSA re-evaluation of phosphates (2019)",
+     "url": "https://doi.org/10.2903/j.efsa.2019.5674"
+    }
+   ],
+   "pubmed": "phosphate additives health kidney cardiovascular"
+  },
+  {
+   "id": "glutamates",
+   "name": "Glutamates (incl. MSG)",
+   "e": [
+    "e620",
+    "e621",
+    "e622",
+    "e623",
+    "e624",
+    "e625"
+   ],
+   "keywords": [
+    "mononatriumglutamaat",
+    "monosodium glutamate",
+    "glutamaat"
+   ],
+   "category": "Flavour enhancer",
+   "level": "under-review",
+   "summary": "Flavour enhancers. EFSA (2017) set a group ADI of 30 mg/kg body weight and noted that some people's intake from additives may exceed it; very high doses have been linked to headaches in some individuals. Glutamate also occurs naturally (tomatoes, cheese).",
+   "sources": [
+    {
+     "label": "EFSA re-evaluation of glutamates (2017)",
+     "url": "https://doi.org/10.2903/j.efsa.2017.4910"
+    }
+   ],
+   "pubmed": "monosodium glutamate health"
+  },
+  {
+   "id": "aluminium",
+   "name": "Aluminium-containing additives",
+   "e": [
+    "e173",
+    "e520",
+    "e521",
+    "e522",
+    "e523",
+    "e541",
+    "e554",
+    "e555",
+    "e556",
+    "e559"
+   ],
+   "keywords": [
+    "aluminium"
+   ],
+   "category": "Colour / raising agent / anti-caking",
+   "level": "regulatory-restriction",
+   "summary": "EFSA (2008) set a tolerable weekly intake for aluminium and found it may be exceeded by part of the population; high exposure may affect the nervous system and bones. The EU restricted the use of aluminium additives in 2012.",
+   "sources": [
+    {
+     "label": "EFSA opinion on dietary aluminium (2008)",
+     "url": "https://doi.org/10.2903/j.efsa.2008.754"
+    },
+    {
+     "label": "Regulation (EC) 1333/2008",
+     "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj"
+    }
+   ],
+   "pubmed": "aluminium food additive exposure"
+  },
+  {
+   "id": "e551",
+   "name": "Silicon dioxide",
+   "e": [
+    "e551"
+   ],
+   "keywords": [
+    "siliciumdioxide",
+    "silicon dioxide"
+   ],
+   "category": "Anti-caking agent",
+   "level": "under-review",
+   "summary": "Anti-caking agent that may contain nanoparticles. EFSA (2018) found no indication of toxicity at reported uses but could not confirm the existing safety assessment due to data gaps, especially regarding nanoparticles.",
+   "sources": [
+    {
+     "label": "EFSA re-evaluation of silicon dioxide (2018)",
+     "url": "https://doi.org/10.2903/j.efsa.2018.5088"
+    }
+   ],
+   "pubmed": "silicon dioxide nanoparticles food"
+  },
+  {
+   "id": "e425",
+   "name": "Konjac",
+   "e": [
+    "e425"
+   ],
+   "keywords": [
+    "konjac"
+   ],
+   "category": "Thickener",
+   "level": "regulatory-restriction",
+   "summary": "Konjac swells strongly in water. It is banned in jelly confectionery, including mini-cups, in the EU because of choking risk. Fine in other foods such as noodles when eaten normally.",
+   "sources": [
+    {
+     "label": "Regulation (EC) 1333/2008",
+     "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj"
+    }
+   ],
+   "pubmed": "konjac choking"
+  },
+  {
+   "id": "palm-oil",
+   "name": "Palm oil / palm fat",
+   "e": [],
+   "tags": [
+    "en:palm-oil",
+    "en:palm-fat",
+    "en:palm-kernel-oil",
+    "en:palm-kernel-fat",
+    "en:fractionated-palm-oil"
+   ],
+   "keywords": [
+    "palmolie",
+    "palmvet",
+    "palm oil",
+    "palmpitolie"
+   ],
+   "category": "Fat (process contaminants)",
+   "level": "regulatory-restriction",
+   "summary": "Refining vegetable oils at high temperatures creates glycidyl esters and 3-MCPD; palm oil contains the highest levels. EFSA (2016) considers glycidol genotoxic and carcinogenic, so the EU sets maximum levels for these contaminants. Palm fat is also high in saturated fat.",
+   "sources": [
+    {
+     "label": "EFSA: process contaminants in vegetable oils (2016)",
+     "url": "https://www.efsa.europa.eu/en/press/news/160503a"
+    },
+    {
+     "label": "Regulation (EU) 2023/915 (contaminant limits)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2023/915/oj"
+    }
+   ],
+   "pubmed": "glycidyl esters 3-MCPD palm oil"
+  },
+  {
+   "id": "trans-fat",
+   "name": "Partially hydrogenated fats",
+   "e": [],
+   "tags": [
+    "en:partially-hydrogenated-vegetable-oil",
+    "en:partially-hydrogenated-oil",
+    "en:partially-hydrogenated-vegetable-fat",
+    "en:partially-hydrogenated-fat"
+   ],
+   "keywords": [
+    "gedeeltelijk gehard",
+    "partially hydrogenated"
+   ],
+   "category": "Fat (trans fat)",
+   "level": "regulatory-restriction",
+   "summary": "Partial hydrogenation creates industrial trans fats, which raise LDL cholesterol and the risk of heart disease (strong evidence). Since April 2021 the EU limits trans fat to 2 g per 100 g fat. Fully hydrogenated fats contain little trans fat.",
+   "sources": [
+    {
+     "label": "Regulation (EU) 2019/649 (trans fat limit)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2019/649/oj"
+    },
+    {
+     "label": "WHO: trans fat",
+     "url": "https://www.who.int/news-room/fact-sheets/detail/trans-fat"
+    }
+   ],
+   "pubmed": "industrial trans fatty acids cardiovascular"
+  },
+  {
+   "id": "caffeine",
+   "name": "Caffeine (added)",
+   "e": [],
+   "tags": [
+    "en:caffeine"
+   ],
+   "keywords": [
+    "cafeïne",
+    "cafeine",
+    "caffeine"
+   ],
+   "category": "Stimulant",
+   "level": "warning-label",
+   "summary": "Drinks with more than 150 mg/l added caffeine must carry 'High caffeine content. Not recommended for children or pregnant or breast-feeding women'. EFSA (2015) considers up to 400 mg/day safe for healthy adults and 200 mg/day during pregnancy.",
+   "sources": [
+    {
+     "label": "EFSA: caffeine",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
+    },
+    {
+     "label": "Regulation (EU) 1169/2011, Annex III",
+     "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj"
+    }
+   ],
+   "pubmed": "caffeine energy drinks children"
+  },
+  {
+   "id": "liquorice",
+   "name": "Liquorice (glycyrrhizin)",
+   "e": [],
+   "tags": [
+    "en:liquorice",
+    "en:liquorice-extract",
+    "en:liquorice-root",
+    "en:glycyrrhizin"
+   ],
+   "keywords": [
+    "zoethout",
+    "drop",
+    "liquorice",
+    "licorice",
+    "glycyrrhizine"
+   ],
+   "category": "Ingredient (e.g. 'drop')",
+   "level": "warning-label",
+   "summary": "Glycyrrhizin in liquorice can raise blood pressure and lower potassium when eaten regularly in large amounts. Products with ≥ 4 g/kg must state 'contains liquorice – people suffering from hypertension should avoid excessive consumption'.",
+   "sources": [
+    {
+     "label": "Regulation (EU) 1169/2011, Annex III",
+     "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj"
+    }
+   ],
+   "pubmed": "glycyrrhizin hypertension liquorice"
+  },
+  {
+   "id": "smoke-flavouring",
+   "name": "Smoke flavourings",
+   "e": [],
+   "tags": [
+    "en:smoke-flavouring",
+    "en:smoke-flavour",
+    "en:smoked-flavouring"
+   ],
+   "keywords": [
+    "rookaroma",
+    "smoke flavour",
+    "rooksmaak"
+   ],
+   "category": "Flavouring",
+   "level": "regulatory-ban",
+   "summary": "In 2023 EFSA could not rule out genotoxicity for the eight authorised primary smoke flavourings. The EU decided not to renew their authorisation; they are being phased out (by 2026 for most foods, 2029 for smoked meat/fish). Traditional smoking is a different process.",
+   "sources": [
+    {
+     "label": "EFSA opinion on a primary smoke flavouring (2023, example)",
+     "url": "https://doi.org/10.2903/j.efsa.2023.8369"
+    },
+    {
+     "label": "Implementing Regulation (EU) 2024/2067",
+     "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/2067/oj"
+    },
+    {
+     "label": "EFSA: flavourings",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/flavourings"
+    }
+   ],
+   "pubmed": "smoke flavourings genotoxicity"
+  },
+  {
+   "id": "gfs",
+   "name": "Glucose-fructose syrup",
+   "e": [],
+   "tags": [
+    "en:glucose-fructose-syrup",
+    "en:fructose-glucose-syrup",
+    "en:high-fructose-corn-syrup",
+    "en:isoglucose"
+   ],
+   "keywords": [
+    "glucose-fructosestroop",
+    "fructose-glucosestroop",
+    "glucose-fructose syrup",
+    "high fructose corn syrup"
+   ],
+   "category": "Added sugar",
+   "level": "limited-evidence",
+   "summary": "A liquid added sugar. The concern is mainly the total amount of free sugars: the WHO recommends keeping them below 10% (ideally 5%) of daily energy. Evidence that this syrup is worse than ordinary sugar is limited.",
+   "sources": [
+    {
+     "label": "WHO guideline: sugars intake (2015)",
+     "url": "https://www.who.int/publications/i/item/9789241549028"
+    },
+    {
+     "label": "EFSA: tolerable upper intake for sugars (2022)",
+     "url": "https://www.efsa.europa.eu/en/news/added-and-free-sugars-should-be-low-possible"
+    }
+   ],
+   "pubmed": "high fructose corn syrup health"
+  },
+  {
+   "id": "e131",
+   "name": "Patent blue V",
+   "e": [
+    "e131"
+   ],
+   "keywords": [
+    "patentblauw"
+   ],
+   "category": "Colour (blue)",
+   "level": "limited-evidence",
+   "summary": "Synthetic blue colour. EFSA (2013) lowered its ADI; rare allergic reactions have been reported, mainly when used medically.",
+   "sources": [
+    {
+     "label": "EFSA: food colours",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/food-colours"
+    }
+   ],
+   "pubmed": "patent blue V allergy"
+  },
+  {
+   "id": "e155",
+   "name": "Brown HT",
+   "e": [
+    "e155"
+   ],
+   "keywords": [
+    "bruin ht"
+   ],
+   "category": "Colour (brown azo dye)",
+   "level": "limited-evidence",
+   "summary": "Synthetic azo dye; EFSA (2010) lowered its ADI because exposure for some children could exceed it. Not permitted in the USA.",
+   "sources": [
+    {
+     "label": "EFSA: food colours",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/food-colours"
+    }
+   ],
+   "pubmed": "brown HT azo dye"
+  },
+  {
+   "id": "e954",
+   "name": "Saccharin",
+   "e": [
+    "e954"
+   ],
+   "keywords": [
+    "sacharine",
+    "saccharin"
+   ],
+   "category": "Sweetener",
+   "level": "limited-evidence",
+   "summary": "One of the oldest sweeteners. Earlier bladder tumour findings in rats were shown not to apply to humans and IARC moved it to Group 3 (not classifiable). EFSA re-evaluated it in 2024 and raised the ADI. Listed here for transparency; current evidence is reassuring.",
+   "sources": [
+    {
+     "label": "EFSA: sweeteners",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+    }
+   ],
+   "pubmed": "saccharin health"
+  }
+ ]
+}

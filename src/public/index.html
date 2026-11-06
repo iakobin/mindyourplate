@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>__TITLE__ — what's in your food</title>
+<meta name="description" content="Scan a food barcode or receipt and see which substances of potential concern may be in it, with the evidence and sources.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f6f7f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121513" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/scan" aria-label="Mind Your Plate home"><img src="/icon.svg" alt="" width="26" height="26"><span>Mind Your Plate</span></a>
+  <nav class="tabs" aria-label="Main">
+    <a href="#/scan" data-tab="scan">Scan</a>
+    <a href="#/receipt" data-tab="receipt">Receipt</a>
+    <a href="#/history" data-tab="history">History</a>
+    <a href="#/about" data-tab="about">About</a>
+  </nav>
+</header>
+
+<main id="main">
+  <!-- SCAN -->
+  <section id="view-scan" class="view" hidden>
+    <h1>Scan a barcode</h1>
+    <p class="lead">Point your camera at the barcode on a food package, or type the number.</p>
+    <div class="scanner card">
+      <div id="cam" class="cam" hidden>
+        <video id="video" playsinline muted></video>
+        <div id="h5" class="h5"></div>
+        <div class="reticle" aria-hidden="true"></div>
+        <p id="camHint" class="cam-hint">Looking for a barcode…</p>
+      </div>
+      <div class="row wrap">
+        <button id="camStart" class="btn primary" type="button">📷 Start camera</button>
+        <button id="camStop" class="btn" type="button" hidden>Stop camera</button>
+        <label class="btn" for="photoInput">🖼️ Scan from photo</label>
+        <input id="photoInput" type="file" accept="image/*" hidden>
+      </div>
+      <p id="camMsg" class="msg" role="status"></p>
+    </div>
+    <form id="manual" class="card row" autocomplete="off">
+      <label for="code" class="sr">Barcode number</label>
+      <input id="code" inputmode="numeric" pattern="[0-9 ]{8,17}" maxlength="17" placeholder="e.g. 8710496979125" required>
+      <button class="btn primary" type="submit">Look up</button>
+    </form>
+    <form id="nameSearch" class="card" autocomplete="off">
+      <label for="q" class="small muted">No barcode? Search by product name</label>
+      <div class="row">
+        <input id="q" maxlength="80" placeholder="e.g. rookworst, hagelslag" required minlength="2">
+        <button class="btn" type="submit">Search</button>
+      </div>
+      <div id="nameResults"></div>
+    </form>
+    <div class="examples small muted">Try: <a href="#/p/8720182721457">Unox rookworst</a> · <a href="#/p/8710496979125">De Ruijter hagelslag</a></div>
+  </section>
+
+  <!-- RECEIPT -->
+  <section id="view-receipt" class="view" hidden>
+    <h1>Scan a receipt</h1>
+    <p class="lead">Take or choose a photo of a till receipt. Text recognition runs <strong>on your device</strong> — the image never leaves your phone.</p>
+    <div class="card">
+      <div class="row wrap">
+        <label class="btn primary" for="receiptInput">🧾 Choose receipt photo</label>
+        <input id="receiptInput" type="file" accept="image/*" hidden>
+        <button id="addLine" class="btn" type="button">+ Add item manually</button>
+      </div>
+      <div id="ocrStatus" class="msg" role="status"></div>
+      <progress id="ocrProgress" max="1" value="0" hidden></progress>
+      <img id="receiptPreview" class="receipt-preview" alt="Receipt preview" hidden>
+    </div>
+    <div id="lines"></div>
+    <details id="rawWrap" class="card small" hidden><summary>Recognised text</summary><pre id="raw"></pre></details>
+  </section>
+
+  <!-- HISTORY -->
+  <section id="view-history" class="view" hidden>
+    <h1>History</h1>
+    <p class="lead">Stored only in this browser. Nothing is saved on our server.</p>
+    <div id="historyList"></div>
+    <button id="clearHistory" class="btn danger" type="button" hidden>Clear history</button>
+  </section>
+
+  <!-- PRODUCT -->
+  <section id="view-product" class="view" hidden>
+    <div id="product"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="view-about" class="view" hidden>
+    <h1>About Mind Your Plate</h1>
+    <p class="lead">Mind Your Plate shows which substances of <em>potential</em> concern may be in a food product and how strong the evidence is, with links to the original sources.</p>
+    <div class="card disclaimer" id="disclaimer">
+      <strong>Not medical advice.</strong> All substances listed are reviewed by regulators, and most are authorised in the EU at the levels used. A listing means there is a regulatory warning, restriction, classification or open scientific question — not that the product is unsafe. Product data comes from Open Food Facts (crowd-sourced) and can be incomplete or out of date; always check the package. Talk to a doctor or dietitian about your own diet.
+    </div>
+    <h2>Evidence levels</h2>
+    <div id="levels" class="levels"></div>
+    <h2>Substances we look for</h2>
+    <input id="kbFilter" type="search" placeholder="Filter, e.g. E250 or sweetener" maxlength="40">
+    <div id="kbList"></div>
+    <h2>Data &amp; privacy</h2>
+    <ul class="small">
+      <li>Product data: <a href="https://world.openfoodfacts.org" rel="noopener" target="_blank">Open Food Facts</a>, available under the Open Database License (ODbL). Add missing products there to improve results for everyone.</li>
+      <li>Our substance list is curated from EFSA opinions, EU regulations, IARC classifications and peer-reviewed studies. “Latest research” links open a live PubMed search.</li>
+      <li>Receipt photos are processed in your browser with <a href="https://tesseract.projectnaptha.com/" rel="noopener" target="_blank">Tesseract.js</a>. Only the product names you choose to search are sent to our server.</li>
+      <li>History lives in your browser’s local storage. No accounts, no tracking.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot small muted">Mind Your Plate · an iakobin labs experiment · data © Open Food Facts contributors · <a href="#/about">disclaimer</a></footer>
+<div id="toast" class="toast" role="alert" hidden></div>
+<script src="/app.js"></script>
+</body>
+</html>

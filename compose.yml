@@ -1,0 +1,25 @@
+# App: mindyourplate (formerly trace; container/network keep the name trace)  ->  https://mindyourplate.iakobin.com
+# No "ports:" on purpose: Caddy reaches it over its own network web_trace.
+services:
+  trace:
+    build: .
+    image: local/trace
+    container_name: trace
+    restart: unless-stopped
+    # Resource limits and privilege hardening.
+    mem_limit: 384m
+    cpus: 1.0
+    pids_limit: 200
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+    networks:
+      - web_trace
+
+networks:
+  web_trace:
+    external: true   # shared only with Caddy (per-app network)
